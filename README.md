@@ -82,8 +82,10 @@ python finetune_vision_encoder/fintune_vit.py --config configs/contrastive.yaml
 
 Launch the `main.py` script using Accelerate with the following command:
 
-``bash
+```bash
+
 accelerate launch main_indus.py 
+
 ```
 
 We list some important optional parameters as follows. The `notes` parameter is both a note to be placed at the top of the filename and the running name for [wandb](https://wandb.ai/site). More hyperparameters and their description can be found in `configs/`
