@@ -4,7 +4,7 @@
 <h1> Knowledge Enhanced Diffusion-Model for Image-to-Text Generation </h1>
 
 
-![colored_mesh (1)](images/fig00.jpg)
+![colored_mesh (1)](images/Fig0.jpg)
 </div>
 
 ---
