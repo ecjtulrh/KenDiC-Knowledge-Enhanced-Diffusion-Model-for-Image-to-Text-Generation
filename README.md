@@ -76,7 +76,7 @@ Answer the questions based on your actual setup. You will be prompted to specify
 ### Pretrain Visual Encoder with Contrastive Learning
 
 ```bash
-python fintune_vit.py --config configs/contrastive.yaml
+python finetune_vision_encoder/fintune_vit.py --config configs/contrastive.yaml
 ```
 
 ### 🎇 Training
