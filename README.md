@@ -54,9 +54,9 @@ datasets/
 
 In our Kenic model, Text Encoder and Decoder are initialized from BERT-base-uncased, which can be downloaded from [Huggingface](https://huggingface.co/bert-base-uncased).
 
-For the image encoder, we initially fine-tuned the pretrained Vision Transformer (ViT) from BLIP on an industrial image dataset. The fine-tuned model is available for download via the new URL [here](https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_capfilt_large.pth) and put it into `pretrained_ckpt` folder. More information can be found in [BLIP&#39;s official repo](https://github.com/salesforce/BLIP).
+For the image encoder, we initially fine-tuned the pretrained Vision Transformer (ViT) from BLIP on an industrial image dataset. The fine-tuned model is available for download via the new URL [here](https://drive.google.com/file/d/1AloAOf6q8nJvNBpIaMwBgwXUq9tIUqbv/view?usp=drive_link) and put it into `pretrained_ckpt` folder. More information can be found in [BLIP&#39;s official repo](https://github.com/salesforce/BLIP).
 
-We provide a version of our pre-trained weights [here](https://drive.google.com/file/d/1oJptCY4oGkMP-LSTIgfx0mFJfMDpH0uG/view?usp=drive_link).
+We provide a version of our pre-trained weights [here](https://drive.google.com/file/d/1ZqfTafbS3k5mSt-B3FYgj5umNCs_ogGO/view?usp=drive_link).
 
 
 
