@@ -7,7 +7,6 @@
 ![colored_mesh (1)](images/Fig0.jpg)
 </div>
 
----
 
 ## Introduction
 **KenDiC** is a Knowledge-Enhanced Diffusion-based Captioner designed for accurate and domain-specific image-to-text generation, particularly in industrial settings. While traditional autoregressive and diffusion models have shown impressive generative capabilities, they often fail in specialized domains due to a lack of external knowledge, resulting in hallucinations or vague descriptions. KenDiC addresses this gap by integrating contrastively trained visual representations with terminology-guided decoding in a latent diffusion framework. In addition, we release an industrial benchmark dataset with **3,300 high-resolution images** and **16,500 expert-annotated captions**, covering realistic scenarios across metallurgy, equipment operations, and safety-critical events.
