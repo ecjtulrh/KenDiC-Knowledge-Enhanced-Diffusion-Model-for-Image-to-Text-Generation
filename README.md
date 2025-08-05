@@ -11,9 +11,7 @@
 
 ## Introduction
 
-**KenDiC** is a Knowledge-Enhanced Diffusion-based Captioner designed for accurate and domain-specific image-to-text generation, particularly in industrial settings. While traditional autoregressive and diffusion models have shown impressive generative capabilities, they often fail in specialized domains due to a lack of external knowledge, resulting in hallucinations or vague descriptions.
-
-KenDiC addresses this gap by integrating contrastively trained visual representations with terminology-guided decoding in a latent diffusion framework. In addition, we release an industrial benchmark dataset with **3,300 high-resolution images** and **16,500 expert-annotated captions**, covering realistic scenarios across metallurgy, equipment operations, and safety-critical events.
+**KenDiC** is a Knowledge-Enhanced Diffusion-based Captioner designed for accurate and domain-specific image-to-text generation, particularly in industrial settings. While traditional autoregressive and diffusion models have shown impressive generative capabilities, they often fail in specialized domains due to a lack of external knowledge, resulting in hallucinations or vague descriptions. KenDiC addresses this gap by integrating contrastively trained visual representations with terminology-guided decoding in a latent diffusion framework. In addition, we release an industrial benchmark dataset with **3,300 high-resolution images** and **16,500 expert-annotated captions**, covering realistic scenarios across metallurgy, equipment operations, and safety-critical events.
 ---
 
 ## Features
@@ -44,7 +42,7 @@ coming soon...
 
 
 ### Prepare the Dataset
-Organize your dataset in the following structure. We also provide our industrial image-text datasets, see: [Goole drive]https://drive.google.com/drive/folders/1n4AB3W1UFCIj3DzjqE_qbSnYVewV72xO?usp=drive_link)
+Organize your dataset in the following structure. We also provide our industrial image-text datasets, see: [Goole drive](https://drive.google.com/drive/folders/1n4AB3W1UFCIj3DzjqE_qbSnYVewV72xO?usp=drive_link)
 ```bash
 datasets/
 ├── train/
@@ -69,10 +67,6 @@ We provide a version of our pre-trained weights [here](https://drive.google.com/
 
 ## Usage
 
-### Pretrain Visual Encoder with Contrastive Learning
-```bash
-python train_contrastive.py --config configs/contrastive.yaml
-```
 ### Configuration
 
 We use [accelerate package](https://huggingface.co/docs/accelerate/index) developed by Huggingface.
@@ -83,6 +77,12 @@ Configure Accelerate by using the following command in the command line:
 accelerate config
 ```
 Answer the questions based on your actual setup. You will be prompted to specify the GPU to use, and other configurations can be left as default. For more information, refer to [this link](https://huggingface.co/docs/accelerate/v0.13.2/en/quicktour#launching-your-distributed-script).
+
+### Pretrain Visual Encoder with Contrastive Learning
+
+```bash
+python fintune_vit.py --config configs/contrastive.yaml
+```
 
 ### 🎇 Training
 
